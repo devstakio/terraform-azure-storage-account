@@ -32,3 +32,7 @@ variable "enable_https_traffic_only" {
 
   description = "Boolean flag which forces HTTPS if enabled, see here for more information"
 }
+
+variable "static_website" {
+  default = false
+}
