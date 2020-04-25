@@ -13,10 +13,11 @@
 | enable\_https\_traffic\_only | Boolean flag which forces HTTPS if enabled, see here for more information | `bool` | `true` | no |
 | name | A name which will be prefixed by the resource group name | `any` | n/a | yes |
 | resource\_group\_name | The name of the resource group which all resources belong to. | `any` | n/a | yes |
+| static\_website | n/a | `bool` | `false` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| primary\_web\_endpoint | n/a |
-
+| primary\_blob\_host | n/a |
+| primary\_web\_host | n/a |
