@@ -36,3 +36,18 @@ variable "enable_https_traffic_only" {
 variable "static_website" {
   default = false
 }
+
+variable "enable_delegator_service_pincipal" {
+  default = false
+
+  description = <<EOF
+    Creates a service princial with a Storage Blob Delegator permission. This allows user to create a user delegation
+    key, which is needed for signing URL's
+EOF
+}
+
+variable "containers" {
+  default = []
+
+  description = "A list of containers (folders) to create within the storage account"
+}
